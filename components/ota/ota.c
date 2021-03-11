@@ -45,7 +45,7 @@ void run_ota(void *params)
   while (true)
   {
     xSemaphoreTake(ota_semaphore, portMAX_DELAY);
-    ESP_LOGI(TAG, "Invoking OTA 3");
+    ESP_LOGI(TAG, "Invoking OTA");
 
     esp_http_client_config_t clientConfig = {
         .url = OTA_URL,
